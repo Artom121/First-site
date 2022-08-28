@@ -1,0 +1,368 @@
+body {
+    border-top: 5px solid rgb(126, 126, 126);
+    background-color: white;
+    background-image: url(./images/bg.png);
+    font: Tahoma 12px, sans-serif;
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+/*============================================================ HEADER ============================================================*/
+
+
+.header {
+    padding-top: 20px;
+}
+
+/*============================== Top header ==============================*/
+
+.top-head {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Поиск */
+
+.head-search-input {
+    background-color: #f3f3f3;
+    border: 1px solid #e7e7e7;
+    width: 136px;
+    padding: 0 10px;
+    height: 30px;
+    font: 12px/40px 'Tahoma', sans-serif;
+    font-weight: 400;
+    position: absolute;
+    right: 40px;
+}
+
+.head-search-input::placeholder {
+    color: rgb(178, 178, 178);
+}
+
+.head-search-button {
+    height: 32px;
+    width: 42px;
+    background-color: rgb(41, 197, 230);
+    border: none;
+    font: 14px 'Oswald', sans-serif;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/*============================== Навигация header ==============================*/
+.head-nav {
+    padding-top: 10px;
+}
+
+.head-nav ul{
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    background-color: rgb(243, 243, 243);
+}
+
+.head-nav ul li{
+    display: inline-block;  
+    padding: 10px 30px;
+}
+
+.head-nav ul li a{
+    text-decoration: none;
+    color: #b2b2b2;
+}
+
+.head-nav ul li.active{
+    background-color: rgb(41, 197, 230);
+    color: white;
+}
+
+/*============================================================ MAIN ============================================================*/
+
+
+
+/*============================== Heading ==============================*/
+
+.heading {
+    padding-left: 20px;
+    background: transparent url(/images/h1-bg.png);
+    margin: 30px 0;
+}
+
+h1 {
+    font: 40px/40px 'Oswald', sans-serif;
+    font-weight: 400;
+    color: rgb(126, 126, 126);
+    padding: 5px 10px;
+    margin: 0;
+    display: inline-block;
+    background-image: url(/images/bg.png);
+}
+
+/*============================== Aside nav ==============================*/
+
+aside {
+    float: left;
+}
+
+.aside-nav {
+    width: 250px;
+    float: left;
+    list-style-position: inside;
+}
+
+.aside-nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: square;
+    border: 1px solid rgb(231, 231, 231);
+    background-color: rgb(243, 243, 243);
+}
+
+.aside-nav ul li {
+    font: 14px/16px 'Oswald', sans-serif;
+    font-weight: 300;
+    color: rgb(143, 143, 143);
+    border-top: 1px solid rgb(231, 231, 231);
+    padding: 10px;
+}
+
+.aside-nav ul li a{
+    color: rgb(143, 143, 143);
+    text-decoration: none;
+}
+
+.aside-nav ul li.active {
+    color: rgb(41, 197, 230);
+}
+
+/*============================== Aside ct ==============================*/
+
+h2 {
+    font: 14px 'Oswald', sans-serif;
+    background-color: rgb(41, 197, 230);
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.aside-ct-image {
+    border: 11px solid rgb(243, 243, 243);
+}
+
+
+/*============================== Section ==============================*/
+
+.main-sect {
+    display: inline-block;
+    width: 680px;
+    height: 170px;
+    margin-left: 30px;
+    background: rgb(41, 197, 230);
+    position: relative;
+}
+
+.main-sect-p {
+    font: 300 italic 33px/34px 'Oswald', sans-serif;
+    color: white;
+    position: absolute;
+    bottom: 19px;
+    left: 18px;
+    display: block;
+}
+
+.main-sect-c {
+    font: 300 20px/34px 'Oswald', sans-serif;
+    position: absolute;
+    bottom: 13px;
+    right: 37px;
+    color: rgb(29, 142, 166);
+}
+
+.main-sect-f {
+    width: 680px;
+    height: 170px;
+    margin-left: 30px;
+}
+
+/*============================== Main text ==============================*/
+
+.main-text {
+    width: 680px;
+}
+
+.main-text-f {
+    margin-top: 20px;
+}
+
+.mt {
+    font: 400 12px/18px 'Tahoma', sans-serif;
+    color: rgb(143, 143, 143);
+}
+
+/*============================== Section content ==============================*/
+
+.section-ct {
+    width: 680px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.main-f {
+    display: inline-block;
+    font-size: 0px;
+    border: 1px solid rgb(201, 201, 201);
+}
+
+.sec-text {
+    font: 300 30px 'Oswald', sans-serif;
+    letter-spacing: 0.04em;
+    height: 45px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+/*============================== Team ==============================*/
+
+.team-f-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.team figcaption {
+    margin-top: 9px;
+    font: 300 16px 'Oswald', sans-serif;
+    color: rgb(143, 143, 143);
+}
+
+.team figcaption span {
+    display: block;
+    color: rgb(41, 197, 230);
+}
+
+.team-s-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.team-figure img {
+    border: 1px solid rgb(201, 201, 201);
+}
+
+/*============================================================ FOOTER ============================================================*/
+
+.footer {
+    background-color: rgb(126, 126, 126);
+    height: 110px;
+    display: block;
+    margin-top: 100px;
+}
+
+.footer-ctn {
+    max-width: 960px;
+    margin: 0 auto;
+    font: 400 12px 'Tahoma', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    color: #dbdbdb;
+}
+
+.footer-ctn-f {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row 
+}
+
+.footer-ctn-f > * > *, 
+.footer-ctn > * > * {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-ctn-f div h3 {
+    font: 400 14px 'Oswald', sans-serif;
+    border-bottom: 1px solid rgb(145, 145, 145);
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-ctn-f .twitter-feed time {
+    color: rgb(168, 163, 163);
+    border-bottom: 1px solid rgb(168, 163, 163);
+}
+
+.footer-ctn-f div {
+    margin-right: 20px;
+}
+
+
+/*============================== Twitter feed ==============================*/
+
+.twitter-feed {
+    width: 300px;   
+}
+
+.twitter-p {
+    margin-top: 7px; 
+}
+
+/*============================== Sitemap ==============================*/
+
+.sitemap {
+    width: 150px;
+}
+
+.sitemap-table {
+    margin: 0;
+}
+
+.sitemap-table a {
+    text-decoration: none;
+    border: none;
+    color: #dbdbdb;
+}
+
+.sitemap-table a:hover {
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.sitemap-table tbody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 130px;
+    height: 50px;
+}
+
+.sitemap-table tbody tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*============================== Footer logo ==============================*/
+
+.footer-logo {
+    font: 10px 'Tahoma', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo a{
+    width: min-content;
+    align-self: end;
+}
